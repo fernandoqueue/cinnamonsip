@@ -1,4 +1,5 @@
 const App = require('./app');
+var ip = require("ip");
 const Registrar = require('./libraries/registrar');
 const Cinnamon = require('./libraries/cinnamon/cinnamon');
 global.debugger = true;
@@ -8,7 +9,7 @@ let registrar = new Registrar();
 //Sip Agent
 let cinnamonOptions = {
     registrar: registrar,
-    address: '192.168.1.240',
+    address: ip.address(),
     port: 41234,
 };
 
