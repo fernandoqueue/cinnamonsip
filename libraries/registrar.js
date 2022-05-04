@@ -2,8 +2,9 @@ var redis = require('redis');
 
 class Registrar  {
     constructor() {
-      this.db = redis.createClient()
-      this.db.connect();
+      // this.db = redis.createClient()
+      // this.db.connect();
+      this.db = new Map();
     }
 
     getDatabase(){

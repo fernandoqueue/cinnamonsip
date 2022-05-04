@@ -4,7 +4,6 @@ const Registrar = require('./libraries/registrar');
 const Cinnamon = require('./libraries/cinnamon/cinnamon');
 global.debugger = true;
 //Registrar/Location;
-let registrar = new Registrar();
 
 //Sip Agent
 let cinnamonOptions = {
