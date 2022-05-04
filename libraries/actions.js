@@ -1,0 +1,15 @@
+exports.actions = [
+    'INVITE', 
+    'ACK', 
+    'BYE', 
+    'CANCEL', 
+ //   'OPTIONS', 
+    'MESSAGE', 
+    'INFO', 
+    'UPDATE', 
+    'REGISTER', 
+    'REFER', 
+    'NOTIFY', 
+    'PUBLISH',
+    'SUBSCRIBE',
+];
