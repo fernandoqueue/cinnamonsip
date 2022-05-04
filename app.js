@@ -8,12 +8,12 @@ class App {
 
     async start(options){
         this.app = await new this.app(options);
-        this.stdin = process.openStdin(); 
+    //    this.stdin = process.openStdin(); 
         return this;
     }
 
     read(){
-        this.stdin.addListener('data', this.app.command.bind(this.app));
+ //       this.stdin.addListener('data', this.app.command.bind(this.app));
     }
 }
 

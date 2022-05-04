@@ -7,7 +7,6 @@ global.debugger = true;
 
 //Sip Agent
 let cinnamonOptions = {
-    registrar: registrar,
     address: ip.address(),
     port: 41234,
 };
