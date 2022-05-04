@@ -28,14 +28,14 @@ class Register
             var contact = parseUri(request.headers.contact[0].uri);
             let user = parseUri(request.headers.to.uri);
             let aor = `${user.user}@${user.host}`;
-            this.registrar.add(aor, {
-                schema: user.params.transport,
-                transport: network.protocol,
-                expires: 300,
-                sbcAddress: network.local,
-                contact: contact,
-                date: new Date(),
-            });
+            // this.registrar.add(aor, {
+            //     schema: user.params.transport,
+            //     transport: network.protocol,
+            //     expires: 300,
+            //     sbcAddress: network.local,
+            //     contact: contact,
+            //     date: new Date(),
+            // });
             
             let response = this.createSuccessResponse(request);
             socket.send(response)
